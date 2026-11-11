@@ -69,4 +69,5 @@ For this workshop you need the following:
 Find common terminology for reference [here](./CheatSheet.md)
 
 my mod
+my mod 2 [skip ci]
 
