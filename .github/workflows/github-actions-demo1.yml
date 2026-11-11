@@ -30,12 +30,12 @@ jobs:
           tree
       - name: Testlog levels
         run: |
-          echo " :: warning file=app.js, line=10::This is a code warning."
-          echo " :: error file=app.js,line=15,col=5::Critical syntax error found!"
+          echo "::warning file=app.js,line=10::This is a code warning."
+          echo "::error file=app.js,line=15,col=5::Critical syntax error found!"
           
       - name: Generate Value
         id: generator
         run: echo "build_id=12345" >> $GitHUB_OUTPUT
         
       - name: Use Value
-        run: echo "The build ID is ${{ Step.generator.output.build_id }}
+        run: echo "The build ID is ${{ Steps.generator.output.build_id }}
